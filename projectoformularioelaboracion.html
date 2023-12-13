@@ -36,9 +36,15 @@
     </div>
     <br><br>
 
-    <form class="formulario">
+    <form class="formulario" action="correo.php" method="post">
     <h3>Personal capacitado</h3>
         <br>
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" placeholder="Nombre" required>
+        <br><br>
+        <label for="email">Correo</label>
+        <input type="email" name="email" id="email" placeholder="Correo" required>
+        <br><br>
         <p>Selecciona el personal que deseas contratar y proporciona tus detalles para la entrega.</p>
         <br>
         <textarea name="pedido" id="pedido" rows="4" cols="50" placeholder="Escribe aquí"></textarea>
@@ -54,8 +60,12 @@
         </select>
         <br><br>
 
-        <button type="submit">Realizar Pedido</button>
+        <button type="submit" value="enviar">Realizar Pedido</button>
     </form>
+
+    <?php
+     include("correo.php");
+    ?>
 
     <footer class="piepagina">
 

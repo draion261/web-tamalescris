@@ -1,0 +1,274 @@
+        
+        * {
+            margin: 0px 0px 0px 0px;
+            }
+
+        a {
+            text-decoration: none;
+            }
+
+        body {
+           /* background-color: rgb(243, 238, 230);*/
+            background-image: url(img/fondo.jpg);
+            }
+
+        .bnsociales1,.bnsociales2,.bnsociales3 {
+            margin-left: 20px;
+            position: relative;
+            left: 200px;
+            margin-left: 20px;
+            }
+
+        .bnsociales1 img,.bnsociales2 img,.bnsociales3 img {
+            position: relative;
+            top: 10px;
+            background-color: white;
+            border-radius: 90px;
+            padding: 3px; 
+            width: 30px; 
+            height: auto; 
+            }
+
+        .iniciologo img{
+            width: 100%;
+            }
+
+        .inicio img {
+            width: 600px;
+            height: auto;
+            margin: 20px 0px 0px 20px;
+            }
+      
+        .inicioTextBorder{
+            background-color: rgb(225, 86, 48);
+            position: relative;
+            width: 850px;
+            height: 600px;
+            top: 20px;
+            left: 20px;
+            }
+
+        .inicioText p {
+            text-align: justify;
+            font-family: Arial, sans-serif;
+            color: white;
+            position: relative;
+            width: 600px;
+            height: auto;
+            top: 30px;
+            left: 40px;
+            }
+
+        .inicio {
+            display: flex;
+            max-width: 1300px;
+            height: auto;
+            }
+
+        .bnhome,.bnservices,.bnacerca,.bncontacto {
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            margin-left: 40px;
+            }
+
+        .BarraNavegacion {
+            text-align: center;
+            background-color: rgb(202, 36, 36);
+            padding: 20px;
+            margin: -10px 0px 0px 0px;
+            }
+
+        .BarraNavegacion a:hover{
+            color: black;
+            }
+
+        .historiaTextBorder{
+            background-color: rgb(211, 6, 6);
+            position: relative;
+            lleft: 27%;
+            ltop: 30px;
+            max-width: 700px;
+            height: 600px;
+            } 
+
+        .historiacontenedor {
+            display: flex;
+            background-color: red;
+            position: relative;
+            left: 2%;
+            top: 20px;
+            width: 1300px;
+            height: 800px;
+            }
+
+        .historiacontenedor img {
+            width: 800px;
+            height: auto;
+            }
+
+        .historiaText p{
+            position: relative;
+            left: 7%;
+            top: 40px;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: justify;
+            max-width: 450px;
+            }
+
+        .navContenedor {
+            /background-color: green;
+            position: relative;
+            padding: 0px;
+            right: -120px;
+            max-width: 1120px;
+            margin: 0px 0px 200px 0px;
+            }
+
+        .serviciosContenedorIngredientes {
+            position: relative;
+            display: flex;
+            top: 50px;
+            left: 0px;
+            }
+
+        .serviciosContenedorEquipos {
+            position: relative;
+            display: flex;
+            top: 90px;
+            right: -20px;
+            }
+
+        .serviciosContenedorElaboracion {
+            position: relative;
+            display: flex;
+            top: 130px;
+            left: 0px;
+            }
+
+        .serviciosContenedorEntrega {
+            position: relative;
+            display: flex;
+            top: 170px;
+            right: -20px;
+            }
+
+        .serviciosIngredientes,.serviciosEquipos,.serviciosElaboracion,.serviciosEntrega {
+            background-color: rgb(211, 6, 6);
+            width: 700px;
+            }
+
+        .serviciosIngredientes p,.serviciosEquipos p,.serviciosElaboracion p,.serviciosEntrega p{
+            position: relative;
+            font-size: 13px;
+            left: 7%;
+            top: 40px;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: justify;
+            max-width: 600px;
+            }
+
+        .serviciosContenedorIngredientes img,.serviciosContenedorElaboracion img {
+            position: relative;
+            left: 20px;
+            width: 400px;
+            height: auto;
+            }
+
+        .serviciosIngredientes a,.serviciosEquipos a,.serviciosElaboracion a,.serviciosEntrega a{
+            color: rgb(0, 139, 255);            
+            }
+
+        .serviciosContenedorEquipos img,.serviciosContenedorEntrega img {
+            position: relative;
+            right: 20px;
+            width: 400px;
+            height: auto;
+            }
+
+        footer {
+            position: relative;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            display: flex;
+            background-color: rgb(145, 0, 0);
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: 50px 0px 0px 0px;
+            bottom: 0px;
+            }
+
+        .footerlogo img {
+            background-color: rgb(145, 0, 0);
+            width: 80px;
+            height: auto;
+            margin: 0px 40px 0px 0px;
+            }
+
+        .informacioncontacto {
+            margin: 0px 40px 0px 0px;
+            }
+
+        .informacion2 {
+            max-width: 300px;
+            text-align: justify;
+            }
+
+        .footercontenedor {
+            position: relative;
+            left: 24%;
+            background-color: rgb(145, 0, 0);
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            }
+
+        .contactoContenedor {
+            font-family: Arial, sans-serif;
+            position: relative;
+            top: 30px;
+            left: 20%;
+            width: 800px;
+            }
+
+        .formulario1 {
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 10px;
+            }
+
+        .formulario {
+            font-family: Arial, sans-serif;
+            position: relative;
+            top: 30px;
+            left: 25%;
+            width: 600px;
+            border-radius: 10px;
+            border: 2px solid red;
+            padding: 10px;
+            }
+
+        .ingredientesFormulario,.equipoFormulario,.personalFormulario,.pedidoFormulario { 
+            font-family: Arial, sans-serif;
+            position: relative;
+            top: 30px;
+            left: 25%;
+            width: 600px;
+            }
+
+        .projectoPoliticas { 
+            font-family: Arial, sans-serif;
+            text-align: justify;
+            position: relative;
+            top: 30px;
+            left: 25%;
+            width: 600px;
+            }
+
+
+

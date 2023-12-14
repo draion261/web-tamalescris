@@ -38,6 +38,7 @@
             padding-top: 10px;
             padding-bottom: 25px;
             border-bottom: 10px solid rgb(124, 22, 22);
+            width: 100%;
         }
 
         .BarraNavegacion a {
@@ -478,7 +479,9 @@
             }
 
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1080px) {
+
+            .BarraNavegacion
 
             .BarraNavegacion a {
                 font-size: 16px;
@@ -664,15 +667,4 @@
             }
 
                 
-        }
-            
-        @media screen and (max-width: 480px) {
-            .BarraNavegacion {
-                padding-top: 5px;
-                padding-bottom: 10px;
-            }
-            
-            .BarraNavegacion a {
-                font-size: 14px;
-            }
-        }
+        }          

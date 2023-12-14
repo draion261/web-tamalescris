@@ -1,42 +1,25 @@
         
-         /*                */
-        /* Estilo general */
-
         * {
             margin: 0px 0px 0px 0px;
             }
 
         a {
             text-decoration: none;
-            font-family: 'Nunito Sans', sans-serif;
             }
-        p {
-            font-family: 'Nunito Sans', sans-serif;
-        }
 
         body {
-            background-image: url(img/fondo1.jpg);
+           /* background-color: rgb(243, 238, 230);*/
+            background-image: url(img/fondo.jpg);
             }
 
-        .BarraNavegacion {
-            text-align: center;
-            background-color: rgb(202, 36, 36);
-            padding-top: 10px;
-            padding-bottom: 25px;
-            border-bottom: 10px solid rgb(124, 22, 22);
-            }
-
-        .BarraNavegacion a:hover{
-            color: black;
-            }
-
-        .BarraNavegacionSociales1,.BarraNavegacionSociales2,.BarraNavegacionSociales3 {
+        .bnsociales1,.bnsociales2,.bnsociales3 {
             margin-left: 20px;
             position: relative;
             left: 200px;
+            margin-left: 20px;
             }
 
-        .BarraNavegacionSociales1 img,.BarraNavegacionSociales2 img,.BarraNavegacionSociales3 img {
+        .bnsociales1 img,.bnsociales2 img,.bnsociales3 img {
             position: relative;
             top: 10px;
             background-color: white;
@@ -46,56 +29,58 @@
             height: auto; 
             }
 
-        .BarraNavegacionInicio,.BarraNavegacionServices,.BarraNavegacionAcerca,.BarraNavegacionContacto {
-            color: white;
-            font-size: 20px;
-            margin-left: 40px;
-            }    
-
-         /*                         */
-        /* Estilo pagina principal */
-       /*                         */
-
         .iniciologo img{
-            position: relative;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            left: 13%;
-            width: 1035px;
-            border-radius: 13px;
+            width: 100%;
             }
 
-        .ContenedorInicioBienvenido{
-            position: relative;
-            left: 13%;
-            display: flex;
-            width: 1035px;
-        }
-
-        .inicioImg img{
-            width: 400px;
+        .inicio img {
+            width: 600px;
             height: auto;
-            border: 4px solid rgb(225, 86, 48);
-            border-top-left-radius: 13px;
-            border-bottom-left-radius: 13px;
-        }
-
-        .inicioText{
-            width: 620px;
-            height: 400px;
-            background-color: rgb(241, 84, 40);
-            border: 4px solid rgb(241, 84, 40);
-            border-top-right-radius: 13px;
-            border-bottom-right-radius: 13px;
+            margin: 20px 0px 0px 20px;
+            }
+      
+        .inicioTextBorder{
+            background-color: rgb(225, 86, 48);
+            position: relative;
+            width: 850px;
+            height: 600px;
+            top: 20px;
+            left: 20px;
             }
 
         .inicioText p {
-            color: white;
             text-align: justify;
+            font-family: Arial, sans-serif;
+            color: white;
             position: relative;
-            width: 600px;;
-            font-size: 12px;
-            margin: 8px;
+            width: 600px;
+            height: auto;
+            top: 30px;
+            left: 40px;
+            }
+
+        .inicio {
+            display: flex;
+            max-width: 1300px;
+            height: auto;
+            }
+
+        .bnhome,.bnservices,.bnacerca,.bncontacto {
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            margin-left: 40px;
+            }
+
+        .BarraNavegacion {
+            text-align: center;
+            background-color: rgb(202, 36, 36);
+            padding: 20px;
+            margin: -10px 0px 0px 0px;
+            }
+
+        .BarraNavegacion a:hover{
+            color: black;
             }
 
         .historiaTextBorder{

@@ -1,6 +1,7 @@
         
          /*                */
         /* Estilo general */
+       /*                */
 
         * {
             margin: 0px 0px 0px 0px;
@@ -27,16 +28,20 @@
             }
 
         .BarraNavegacion a:hover{
-            color: black;
+            color: rgb(117, 117, 117);
             }
 
-        .BarraNavegacionSociales1,.BarraNavegacionSociales2,.BarraNavegacionSociales3 {
+        .BarraNavegacionSociales1,
+        .BarraNavegacionSociales2,
+        .BarraNavegacionSociales3 {
             margin-left: 20px;
             position: relative;
             left: 200px;
             }
 
-        .BarraNavegacionSociales1 img,.BarraNavegacionSociales2 img,.BarraNavegacionSociales3 img {
+        .BarraNavegacionSociales1 img,
+        .BarraNavegacionSociales2 img,
+        .BarraNavegacionSociales3 img {
             position: relative;
             top: 10px;
             background-color: white;
@@ -46,7 +51,10 @@
             height: auto; 
             }
 
-        .BarraNavegacionInicio,.BarraNavegacionServices,.BarraNavegacionAcerca,.BarraNavegacionContacto {
+        .BarraNavegacionInicio,
+        .BarraNavegacionServices,
+        .BarraNavegacionAcerca,
+        .BarraNavegacionContacto {
             color: white;
             font-size: 20px;
             margin-left: 40px;
@@ -98,11 +106,60 @@
             margin: 8px;
             }
 
+         /*                       */
+        /*Estilo pagina servicios*/
+       /*                       */
+
+       .ContenedorPrincipalServicios {
+            display: flex;
+            position: relative;
+            }
+
+        .serviciosContenedorIngredientes,
+        .serviciosContenedorEquipos,
+        .serviciosContenedorElaboracion,
+        .serviciosContenedorEntrega {
+            position: relative;
+            top: 100px;
+            left: 4%;
+            padding: 20px;
+            margin: 20px;
+            height: 250px;
+            margin-bottom: 250px;
+            align-items:normal;
+            background-color: white;
+            border: 4px solid rgb(241, 84, 40);
+            border-radius: 10px ;
+            }
+
+        .serviciosContenedorIngredientes:hover,
+        .serviciosContenedorEquipos:hover,
+        .serviciosContenedorElaboracion:hover,
+        .serviciosContenedorEntrega:hover {
+            position: relative;
+            top: 80px;
+            left: 0px;
+            margin-right: -20px;
+            width: 260px;
+            height: 260px;
+        }
+
+        .serviciosContenedorIngredientes img,
+        .serviciosContenedorElaboracion img,
+        .serviciosContenedorEquipos img,
+        .serviciosContenedorEntrega img {
+            position: relative;
+            width: 220px;
+            height: auto;
+            }
+
+         /*                       */
+        /*Estilo pagina historia*/
+       /*                       */
+
         .historiaTextBorder{
             background-color: rgb(211, 6, 6);
             position: relative;
-            lleft: 27%;
-            ltop: 30px;
             max-width: 700px;
             height: 600px;
             } 
@@ -130,77 +187,6 @@
             font-family: Arial, sans-serif;
             text-align: justify;
             max-width: 450px;
-            }
-
-        .navContenedor {
-            /background-color: green;
-            position: relative;
-            padding: 0px;
-            right: -120px;
-            max-width: 1120px;
-            margin: 0px 0px 200px 0px;
-            }
-
-        .serviciosContenedorIngredientes {
-            position: relative;
-            display: flex;
-            top: 50px;
-            left: 0px;
-            }
-
-        .serviciosContenedorEquipos {
-            position: relative;
-            display: flex;
-            top: 90px;
-            right: -20px;
-            }
-
-        .serviciosContenedorElaboracion {
-            position: relative;
-            display: flex;
-            top: 130px;
-            left: 0px;
-            }
-
-        .serviciosContenedorEntrega {
-            position: relative;
-            display: flex;
-            top: 170px;
-            right: -20px;
-            }
-
-        .serviciosIngredientes,.serviciosEquipos,.serviciosElaboracion,.serviciosEntrega {
-            background-color: rgb(211, 6, 6);
-            width: 700px;
-            }
-
-        .serviciosIngredientes p,.serviciosEquipos p,.serviciosElaboracion p,.serviciosEntrega p{
-            position: relative;
-            font-size: 13px;
-            left: 7%;
-            top: 40px;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: justify;
-            max-width: 600px;
-            }
-
-        .serviciosContenedorIngredientes img,.serviciosContenedorElaboracion img {
-            position: relative;
-            left: 20px;
-            width: 400px;
-            height: auto;
-            }
-
-        .serviciosIngredientes a,.serviciosEquipos a,.serviciosElaboracion a,.serviciosEntrega a{
-            color: rgb(0, 139, 255);            
-            }
-
-        .serviciosContenedorEquipos img,.serviciosContenedorEntrega img {
-            position: relative;
-            right: 20px;
-            width: 400px;
-            height: auto;
             }
 
         footer {

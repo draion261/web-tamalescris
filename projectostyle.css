@@ -3,21 +3,34 @@
         /* Estilo general */
        /*                */
 
+        meta[name="viewport"] {
+            content: width=device-width, initial-scale=1.0;
+        }
+
         * {
             margin: 0px 0px 0px 0px;
-            }
+        }
 
         a {
             text-decoration: none;
             font-family: 'Nunito Sans', sans-serif;
-            }
+        }
+
         p {
             font-family: 'Nunito Sans', sans-serif;
         }
 
         body {
             background-image: url(img/fondo1.jpg);
-            }
+        }
+
+        h3{
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        h2{
+            font-family: 'Nunito Sans', sans-serif;
+        }
 
         .BarraNavegacion {
             text-align: center;
@@ -25,11 +38,16 @@
             padding-top: 10px;
             padding-bottom: 25px;
             border-bottom: 10px solid rgb(124, 22, 22);
-            }
+        }
+
+        .BarraNavegacion a {
+            transition: 0.3s;
+        }           
 
         .BarraNavegacion a:hover{
-            color: rgb(117, 117, 117);
-            }
+            position: relative;
+            top: -3px;
+        }
 
         .BarraNavegacionSociales1,
         .BarraNavegacionSociales2,
@@ -37,7 +55,7 @@
             margin-left: 20px;
             position: relative;
             left: 200px;
-            }
+        }
 
         .BarraNavegacionSociales1 img,
         .BarraNavegacionSociales2 img,
@@ -49,7 +67,7 @@
             padding: 3px; 
             width: 30px; 
             height: auto; 
-            }
+        }
 
         .BarraNavegacionInicio,
         .BarraNavegacionServices,
@@ -58,7 +76,7 @@
             color: white;
             font-size: 20px;
             margin-left: 40px;
-            }    
+        }    
 
          /*                         */
         /* Estilo pagina principal */
@@ -71,7 +89,7 @@
             left: 13%;
             width: 1035px;
             border-radius: 13px;
-            }
+        }
 
         .ContenedorInicioBienvenido{
             position: relative;
@@ -83,7 +101,8 @@
         .inicioImg img{
             width: 400px;
             height: auto;
-            border: 4px solid rgb(225, 86, 48);
+            border: 6px solid rgb(184, 63, 30);
+            border-right: 6px solid rgb(241, 84, 40);
             border-top-left-radius: 13px;
             border-bottom-left-radius: 13px;
         }
@@ -92,10 +111,11 @@
             width: 620px;
             height: 400px;
             background-color: rgb(241, 84, 40);
-            border: 4px solid rgb(241, 84, 40);
+            border: 6px solid rgb(184, 63, 30);
+            border-left: 6px solid rgb(241, 84, 40);
             border-top-right-radius: 13px;
             border-bottom-right-radius: 13px;
-            }
+        }
 
         .inicioText p {
             color: white;
@@ -104,16 +124,37 @@
             width: 600px;;
             font-size: 12px;
             margin: 8px;
-            }
+        }
 
          /*                       */
         /*Estilo pagina servicios*/
        /*                       */
 
+       .ContactoServiciosInstagram{
+            position: relative;
+            left: 137px;
+            top: 30px;
+            display: flex;
+            height: auto;
+            border-bottom: 4px solid rgb(241, 84, 40);
+            max-width: 300px;
+        }
+
+        .ContactoServiciosInstagram img{
+            width: 50px;
+            height: auto;
+        }
+
+        .ContactoServiciosInstagramText p{
+            position: relative;
+            bottom: -20px;
+            margin-right: 40px;
+        }
+
        .ContenedorPrincipalServicios {
             display: flex;
             position: relative;
-            }
+        }
 
         .serviciosContenedorIngredientes,
         .serviciosContenedorEquipos,
@@ -126,11 +167,11 @@
             margin: 20px;
             height: 250px;
             margin-bottom: 250px;
-            align-items:normal;
             background-color: white;
             border: 4px solid rgb(241, 84, 40);
             border-radius: 10px ;
-            }
+            transition: 0.3s;
+        }
 
         .serviciosContenedorIngredientes:hover,
         .serviciosContenedorEquipos:hover,
@@ -138,10 +179,13 @@
         .serviciosContenedorEntrega:hover {
             position: relative;
             top: 80px;
-            left: 0px;
-            margin-right: -20px;
-            width: 260px;
-            height: 260px;
+        }
+
+        .serviciosContenedorIngredientes p,
+        .serviciosContenedorEquipos p,
+        .serviciosContenedorElaboracion p,
+        .serviciosContenedorEntrega p {
+            font-size: 12px ;
         }
 
         .serviciosContenedorIngredientes img,
@@ -151,48 +195,254 @@
             position: relative;
             width: 220px;
             height: auto;
-            }
+            border-radius: 10px;
+        }
 
-         /*                       */
-        /*Estilo pagina historia*/
-       /*                       */
+         /*                             */
+        /*Estilo Servicios Ingredientes*/
+       /*                             */
 
-        .historiaTextBorder{
-            background-color: rgb(211, 6, 6);
+        .ContenedorPrincipalIngredientes {
             position: relative;
-            max-width: 700px;
-            height: 600px;
-            } 
+            top: 40px;
+            left: 10%;
+            max-width: 1000px;    
+        }
 
-        .historiacontenedor {
-            display: flex;
-            background-color: red;
-            position: relative;
-            left: 2%;
-            top: 20px;
-            width: 1300px;
-            height: 800px;
-            }
+        .IngredientesNombre{
+            height: 18px;
+            border-bottom: 4px solid rgb(241, 84, 40);
+        }
 
-        .historiacontenedor img {
-            width: 800px;
+        .ContenedorPrincipalIngredientes img{
+            width: 150px;
             height: auto;
+            border-radius: 10px;
+        }
+
+        .precio {
+            color: rgb(40, 255, 40);;
+        }
+
+        .ContenedorMasas,
+        .ContenedorRellenos,
+        .ContenedorAdicionales,
+        .ContenedorAdicionales2{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            max-width: 1500px;
+            border-radius: 10px;
+        }
+
+        .Masas,
+        .Rellenos,
+        .Adicionales,
+        .Adicionales2{
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .InformacionContacto {
+            display: flex;
+        }
+
+        .InformacionContacto img{
+            width: 40px;
+            height: auto;
+        }
+
+        .ContactoTwitter {
+            border-radius: 90px;
+        }
+
+         /*                        */
+        /*Estilo Servicios Equipos*/
+       /*                        */
+
+        .ContenedorPrincipalEquipo{
+            position: relative;
+            top: 40px;
+            left: 10%;
+            max-width: 1000px; 
+        }
+
+        .UtenciliosNombre,       
+        .EquiposNombre{
+            height: 18px;
+            border-bottom: 4px solid rgb(241, 84, 40);
+        }
+
+        .ContenedorPrincipalEquipo img{
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .ContenedorEquipos,
+        .ContenedorEquipos2,
+        .ContenedorUtencilios{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            max-width: 1500px;
+            border-radius: 10px;
+        }
+
+        .Equipos,
+        .Utencilios{
+            padding: 10px;
+            margin: 20px;
+        }
+
+         /*                         */
+        /*Estilo Servicios Personal*/
+       /*                         */
+
+        .ContenedorPrincipalPersonal{
+            position: relative;
+            top: 40px;
+            left: 10%;
+            max-width: 1000px; 
+        }
+
+        .PersonalNombre {
+            height: 18px;
+            border-bottom: 4px solid rgb(241, 84, 40);
+        }
+
+        .ContenedorPrincipalPersonal img{
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .ContenedorPersonal,
+        .ContenedorPersonal2{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            max-width: 1500px;
+            border-radius: 10px;
+        }
+
+        .Personal,
+        .Personal2{
+            padding: 10px;
+            margin: 20px;
+        }
+
+         /*                      */
+        /*Estilo Servicios Tamal*/
+       /*                      */
+
+        .ContenedorPrincipalTamal{
+            position: relative;
+            top: 40px;
+            left: 10%;
+            max-width: 1000px; 
+        }
+
+        .TamalNombre {
+            height: 18px;
+            border-bottom: 4px solid rgb(241, 84, 40);
+        }
+
+        .ContenedorPrincipalTamal img{
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .ContenedorTamal,
+        .ContenedorTamal2,
+        .ContenedorTamal3{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            max-width: 1500px;
+            border-radius: 10px;
+        }
+
+        .Tamal,
+        .Tamal2,
+        .Tamal3{
+            padding: 10px;
+            margin: 20px;
+        }
+
+         /*                      */
+        /*Estilo pagina historia*/
+       /*                      */
+
+        .ContenedorPrincipalHistoria {
+            display: flex;
+            position: relative;
+            left: 3%;
+            top: 20px;
+            width: 1250px;
+            max-height: 600px;
+            background-color: red;
+            border-radius: 15px;
+        }
+
+        .historiaImg img {
+            width: 600px;
+            height: auto;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
             }
 
         .historiaText p{
             position: relative;
-            left: 7%;
-            top: 40px;
+            top: 35px;
+            left: 40px;
             color: white;
-            font-family: Arial, sans-serif;
             text-align: justify;
-            max-width: 450px;
+            max-width: 570px;
             }
+
+         /*                       */
+        /*Estilo Pagina Politicas*/
+       /*                       */
+
+        .projectoPoliticas { 
+            text-align: justify;
+            position: relative;
+            top: 30px;
+            left: 25%;
+            width: 600px;
+            }
+
+         /*                       */
+        /*Estilo Pagina Contacto*/
+       /*                       */
+
+        .contactoContenedor {
+            position: relative;
+            top: 30px;
+            left: 20%;
+            width: 800px;
+            }
+    
+        .formulario1 {
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 10px;
+            }
+        
+        .ContactoInstagram{
+            width: 40px;
+            height: auto;
+        }
+
+         /*             */
+        /*Pie de Página*/
+       /*             */
 
         footer {
             position: relative;
             color: white;
-            font-family: Arial, sans-serif;
             font-size: 10px;
             display: flex;
             background-color: rgb(145, 0, 0);
@@ -203,8 +453,16 @@
             bottom: 0px;
             }
 
+        .footerContenedorInformacion {
+            position: relative;
+            left: 24%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            }
+
         .footerlogo img {
-            background-color: rgb(145, 0, 0);
             width: 80px;
             height: auto;
             margin: 0px 40px 0px 0px;
@@ -219,57 +477,202 @@
             text-align: justify;
             }
 
-        .footercontenedor {
-            position: relative;
-            left: 24%;
-            background-color: rgb(145, 0, 0);
-            height: 80px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+
+        @media screen and (max-width: 768px) {
+
+            .BarraNavegacion a {
+                font-size: 16px;
+            }
+        
+
+            .BarraNavegacionSociales1,
+            .BarraNavegacionSociales2,
+            .BarraNavegacionSociales3 {
+                margin-left: 10px;
+                position: relative;
+                left: 10px;
             }
 
-        .contactoContenedor {
-            font-family: Arial, sans-serif;
-            position: relative;
-            top: 30px;
-            left: 20%;
-            width: 800px;
+            .BarraNavegacionSociales1 img,
+            .BarraNavegacionSociales2 img,
+            .BarraNavegacionSociales3 img {
+                position: relative;
+                top: 10px;
+                border-radius: 90px; 
+                width: 30px; 
+                height: auto; 
             }
 
-        .formulario1 {
-            border-radius: 10px;
-            border: 2px solid black;
-            padding: 10px;
+            .BarraNavegacionInicio,
+            .BarraNavegacionServices,
+            .BarraNavegacionAcerca,
+            .BarraNavegacionContacto {
+                color: white;
+                font-size: 20px;
+                margin-left: 20px;
+            } 
+
+            /*Pagina Inicio*/
+
+            .iniciologo img{
+                position: relative;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                left: 13%;
+                width: 500px;
+                border-radius: 13px;
             }
 
-        .formulario {
-            font-family: Arial, sans-serif;
-            position: relative;
-            top: 30px;
-            left: 25%;
-            width: 600px;
-            border-radius: 10px;
-            border: 2px solid red;
-            padding: 10px;
+            .ContenedorInicioBienvenido,
+            .inicioImg img,
+            .inicioText {
+                width: 100%;
             }
 
-        .ingredientesFormulario,.equipoFormulario,.personalFormulario,.pedidoFormulario { 
-            font-family: Arial, sans-serif;
-            position: relative;
-            top: 30px;
-            left: 25%;
-            width: 600px;
+            .ContenedorInicioBienvenido{
+                position: relative;
+                left: 13%;
+                display: flex;
+                width: 500px;
+            }
+    
+            .inicioImg img{
+                width: 200px;
+                height: auto;
+                border: 6px solid rgb(184, 63, 30);
+                border-right: 6px solid rgb(241, 84, 40);
+                border-top-left-radius: 13px;
+                border-bottom-left-radius: 13px;
+            }
+    
+            .inicioText{
+                width: 280px;
+                height: 200px;
+                background-color: rgb(241, 84, 40);
+                border: 6px solid rgb(184, 63, 30);
+                border-left: 6px solid rgb(241, 84, 40);
+                border-top-right-radius: 13px;
+                border-bottom-right-radius: 13px;
+            }
+    
+            .inicioText p {
+                color: white;
+                text-align: justify;
+                position: relative;
+                width: 260px;;
+                font-size: 6px;
+                margin: 8px;
+            }
+            /*footer*/
+            footer {
+                position: relative;
+                color: white;
+                font-size: 6px;
+                display: flex;
+                background-color: rgb(145, 0, 0);
+                width: 100%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin: 50px 0px 0px 0px;
+                bottom: 0px;
+                }
+    
+            .footerContenedorInformacion {
+                position: relative;
+                left: 24%;
+                height: 80px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                }
+    
+            .footerlogo img {
+                width: 40px;
+                height: auto;
+                margin: 0px 20px 0px 0px;
+                }
+    
+            .informacioncontacto {
+                margin: 0px 20px 0px 0px;
+                }
+    
+            .informacion2 {
+                max-width: 180px;
+                text-align: justify;
+                }
+
+            /*servicios*/
+
+            .ContactoServiciosInstagram{
+                position: relative;
+                left: 137px;
+                top: 30px;
+                display: flex;
+                height: auto;
+                border-bottom: 4px solid rgb(241, 84, 40);
+                max-width: 300px;
+            }
+    
+            .ContactoServiciosInstagram img{
+                width: 50px;
+                height: auto;
+            }
+    
+            .ContactoServiciosInstagramText p{
+                position: relative;
+                bottom: -20px;
+                margin-right: 40px;
+            }
+    
+           .ContenedorPrincipalServicios {
+                max-width: 200px;
+                max-height: 1000px;
+            }
+    
+            .serviciosContenedorIngredientes,
+            .serviciosContenedorEquipos,
+            .serviciosContenedorElaboracion,
+            .serviciosContenedorEntrega {
+                position: relative;
+                top: 40px;
+                left: 4%;
+                padding: 20px;
+                margin: 20px;
+                height: 150px;
+                margin-bottom: 150px;
+                background-color: white;
+                border: 4px solid rgb(241, 84, 40);
+                border-radius: 10px ;
+                transition: 0.3s;
+            }   
+    
+            .serviciosContenedorIngredientes p,
+            .serviciosContenedorEquipos p,
+            .serviciosContenedorElaboracion p,
+            .serviciosContenedorEntrega p {
+                font-size: 12px ;
+            }
+    
+            .serviciosContenedorIngredientes img,
+            .serviciosContenedorElaboracion img,
+            .serviciosContenedorEquipos img,
+            .serviciosContenedorEntrega img {
+                position: relative;
+                width: 120px;
+                height: auto;
+                border-radius: 10px;
             }
 
-        .projectoPoliticas { 
-            font-family: Arial, sans-serif;
-            text-align: justify;
-            position: relative;
-            top: 30px;
-            left: 25%;
-            width: 600px;
+                
+        }
+            
+        @media screen and (max-width: 480px) {
+            .BarraNavegacion {
+                padding-top: 5px;
+                padding-bottom: 10px;
             }
-
-
-
+            
+            .BarraNavegacion a {
+                font-size: 14px;
+            }
+        }
